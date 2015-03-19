@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ -n "$USER" ];
+then
+    curl http://$HANDS_ON_SERVER:$HANDS_ON_PORT/booking/$USER
+else
+    echo "Registrazione fallita: devi impostare un utente ";
+fi
+
+		 
