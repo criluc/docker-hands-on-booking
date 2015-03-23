@@ -2,7 +2,7 @@
 
 if [ -n "$USER" ];
 then
-    curl http://$HANDS_ON_SERVER:$HANDS_ON_PORT/booking/$USER
+    curl http://$HANDS_ON_SERVER:$HANDS_ON_PORT/booking/${USER// /_}
 else
     echo "Registrazione fallita: devi impostare un utente ";
 fi
