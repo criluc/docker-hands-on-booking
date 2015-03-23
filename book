@@ -1,8 +1,9 @@
-#!/bin/sh
+#!/bin/bash
 
+USER=$1
 if [ -n "$USER" ];
 then
-    curl http://$HANDS_ON_SERVER:$HANDS_ON_PORT/booking/${USER// /_}
+    echo http://$HANDS_ON_SERVER:$HANDS_ON_PORT/booking/${USER// /_}
 else
     echo "Registrazione fallita: devi impostare un utente ";
 fi
